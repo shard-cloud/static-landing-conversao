@@ -1,0 +1,24 @@
+{
+  "name": "static-landing-conversao",
+  "version": "1.0.0",
+  "description": "Landing page moderna e otimizada para conversão",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 80",
+    "build": "vite build",
+    "preview": "vite preview --port 80"
+  },
+  "keywords": [
+    "landing-page",
+    "conversion",
+    "responsive",
+    "accessibility",
+    "seo"
+  ],
+  "author": "ShardCloud",
+  "license": "MIT",
+  "devDependencies": {
+    "terser": "^5.44.0",
+    "vite": "^5.0.0"
+  }
+}

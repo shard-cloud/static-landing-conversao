@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Check</title>
+</head>
+<body>
+  <h1>OK</h1>
+  <p>Status: Healthy</p>
+  <script>
+    // Return JSON for programmatic checks
+    if (window.location.search.includes('json=true')) {
+      document.body.innerHTML = '';
+      document.body.textContent = JSON.stringify({ status: 'ok', timestamp: new Date().toISOString() });
+      document.body.style.whiteSpace = 'pre';
+    }
+  </script>
+</body>
+</html>
+

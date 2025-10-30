@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "title": "Transforme Visitantes em Clientes | Landing Page Pro",
+    "description": "Aumente suas conversões com uma landing page otimizada. Design moderno, rápido e focado em resultados.",
+    "keywords": "landing page, conversão, marketing digital, leads",
+    "og_title": "Transforme Visitantes em Clientes",
+    "og_description": "Aumente suas conversões com uma landing page otimizada."
+  },
+  "header": {
+    "logo": "LandingPro",
+    "cta": "Começar Agora"
+  },
+  "hero": {
+    "title": "Transforme Visitantes em <span class=\"highlight\">Clientes</span>",
+    "subtitle": "Aumente suas conversões em até 300% com uma landing page otimizada, rápida e focada em resultados reais.",
+    "email_placeholder": "Seu melhor e-mail",
+    "button": "Começar Grátis 🎉",
+    "note": "✓ Sem cartão de crédito &nbsp;•&nbsp; ✓ Cancele quando quiser"
+  },
+  "benefits": {
+    "title": "Por que escolher nossa solução?",
+    "fast": {
+      "title": "Ultra Rápido",
+      "description": "Carregamento em menos de 1 segundo. Performance otimizada para máxima conversão."
+    },
+    "responsive": {
+      "title": "100% Responsivo",
+      "description": "Design perfeito em qualquer dispositivo. Mobile-first e touch-friendly."
+    },
+    "accessible": {
+      "title": "Acessível",
+      "description": "WCAG 2.1 nível AA. Todos podem acessar e converter em seu site."
+    },
+    "modern": {
+      "title": "Design Moderno",
+      "description": "Interface limpa e profissional que transmite confiança e credibilidade."
+    },
+    "seo": {
+      "title": "SEO Otimizado",
+      "description": "Meta tags perfeitas, structured data e semântica para ranquear no Google."
+    },
+    "production": {
+      "title": "Pronto para Produção",
+      "description": "Deploy em minutos. Hospede em qualquer plataforma com um comando."
+    }
+  },
+  "social_proof": {
+    "title": "Resultados Comprovados",
+    "stats": {
+      "conversion": {
+        "number": "300%",
+        "label": "Aumento em Conversões"
+      },
+      "loading": {
+        "number": "<1s",
+        "label": "Tempo de Carregamento"
+      },
+      "lighthouse": {
+        "number": "95+",
+        "label": "Lighthouse Score"
+      },
+      "satisfaction": {
+        "number": "100%",
+        "label": "Satisfação Garantida"
+      }
+    }
+  },
+  "cta": {
+    "title": "Pronto para aumentar suas conversões?",
+    "subtitle": "Junte-se a milhares de empresas que já transformaram visitantes em clientes.",
+    "button": "Começar Agora - É Grátis 🚀",
+    "note": "Sem compromisso. Cancele quando quiser."
+  },
+  "footer": {
+    "tagline": "Conversão otimizada para seu negócio",
+    "product": {
+      "title": "Produto",
+      "features": "Funcionalidades",
+      "pricing": "Preços",
+      "templates": "Templates"
+    },
+    "company": {
+      "title": "Empresa",
+      "about": "Sobre",
+      "blog": "Blog",
+      "contact": "Contato"
+    },
+    "legal": {
+      "title": "Legal",
+      "privacy": "Privacidade",
+      "terms": "Termos de Uso"
+    },
+    "copyright": "© 2025 LandingPro. Todos os direitos reservados."
+  },
+  "modal": {
+    "title": "Obrigado!",
+    "message": "Seu cadastro foi realizado com sucesso. Em breve você receberá mais informações.",
+    "close": "Fechar"
+  }
+}
+
