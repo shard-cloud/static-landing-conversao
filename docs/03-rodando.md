@@ -1,5 +1,3 @@
-# Rodando o projeto
-
 ## 🚀 Desenvolvimento local
 
 ### 1. Instalação

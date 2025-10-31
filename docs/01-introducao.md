@@ -1,5 +1,3 @@
-# Introdução
-
 ## 📖 O que é este template?
 
 Este é um template de **landing page otimizada para conversão**, desenvolvido com HTML, CSS e JavaScript puros. Foi projetado para capturar leads, promover produtos/serviços e maximizar a taxa de conversão de visitantes em clientes.

@@ -1,5 +1,3 @@
-# Configuração
-
 ## 🎨 Personalização de cores
 
 Edite as variáveis CSS em `src/styles.css`:
