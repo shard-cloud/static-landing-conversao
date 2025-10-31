@@ -1,7 +1,7 @@
 DISPLAY_NAME=Landing Page Conversão
-ENTRYPOINT=index.html
+MAIN=index.html
 MEMORY=512
 VERSION=recommended
 SUBDOMAIN=sua-landing
-START=npm run build && npm run preview
+CUSTOM_COMMAND=npm run build && npm run preview
 DESCRIPTION=Landing page moderna e otimizada para conversão com i18n

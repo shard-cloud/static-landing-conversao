@@ -18,11 +18,11 @@ Crie um arquivo `.shardcloud` na raiz do projeto:
 
 ```bash
 DISPLAY_NAME=Landing Page Conversão
-ENTRYPOINT=index.html
+MAIN=index.html
 MEMORY=512
 VERSION=recommended
 SUBDOMAIN=sua-landing
-START=npm run build && npm run preview
+CUSTOM_COMMAND=npm run build && npm run preview
 DESCRIPTION=Landing page moderna e otimizada para conversão com i18n
 ```
 
@@ -70,14 +70,17 @@ Acesse `http://localhost:80` para verificar se tudo está funcionando.
 ### Método 1: Upload direto (Recomendado)
 
 1. **Acesse o Dashboard**
+
    - Vá para [Shard Cloud Dashboard](https://shardcloud.app/dash)
    - Faça login na sua conta
 
 2. **Criar nova aplicação**
+
    - Clique em **"New app"**
    - Selecione **"Upload"**
 
 3. **Preparar arquivos**
+
    - Zip toda a pasta do projeto (incluindo `.shardcloud`)
    - Ou zip apenas a pasta `dist/` + `.shardcloud`
 
@@ -89,11 +92,13 @@ Acesse `http://localhost:80` para verificar se tudo está funcionando.
 ### Método 2: Deploy via Git
 
 1. **Conectar repositório**
+
    - No dashboard, clique em **"New app"**
    - Selecione **"Git Repository"**
    - Conecte seu repositório GitHub/GitLab
 
 2. **Configurar build**
+
    - **Build command:** `npm run build`
    - **Output directory:** `dist`
    - **Node version:** `20` (recomendado)
@@ -117,6 +122,7 @@ Sua aplicação ficará disponível em: `https://minha-landing.shardweb.app`
 ### Domínio personalizado
 
 1. **Configurar DNS**
+
    - Adicione um registro CNAME apontando para `sua-landing.shardweb.app`
    - Ou configure A record com o IP fornecido
 
@@ -186,24 +192,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
+
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '20'
-          cache: 'npm'
-      
+          node-version: "20"
+          cache: "npm"
+
       - name: Install dependencies
         run: npm ci
-      
+
       - name: Build
         run: npm run build
-      
+
       - name: Deploy to Shard Cloud
         run: |
           # Zip project
           zip -r deploy.zip dist/ .shardcloud
-          
+
           # Upload to Shard Cloud (configure API token)
           curl -X POST \
             -H "Authorization: Bearer ${{ secrets.SHARD_TOKEN }}" \
@@ -254,7 +260,7 @@ npm run build
 
 ## 🎉 Sucesso!
 
-Sua landing page está no ar na Shard Cloud! 
+Sua landing page está no ar na Shard Cloud!
 
 ### Próximos passos:
 
