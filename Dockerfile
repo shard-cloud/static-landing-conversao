@@ -1,28 +1,25 @@
-# Stage 1: Build
-FROM node:20-alpine AS builder
+FROM node:20-alpine
 
 WORKDIR /app
 
+# Copy package files
 COPY package*.json ./
-RUN npm ci
 
+# Install all dependencies
+RUN npm install
+
+# Copy source files
 COPY . .
+
+# Build static files
 RUN npm run build
 
-# Stage 2: Production
-FROM nginx:alpine
-
-# Copiar build para nginx
-COPY --from=builder /app/dist /usr/share/nginx/html
-
-# Configuração nginx
-COPY nginx.conf /etc/nginx/conf.d/default.conf
-
 # Health check
-HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
-  CMD wget --quiet --tries=1 --spider http://localhost/health.html || exit 1
+HEALTHCHECK --interval=30s --timeout=3s --start-period=10s --retries=3 \
+  CMD node -e "fetch('http://localhost:80/health.html').then(r => r.ok ? process.exit(0) : process.exit(1))" || exit 1
 
 EXPOSE 80
 
-CMD ["nginx", "-g", "daemon off;"]
+# Serve with production-ready static server
+CMD ["npm", "start"]
 

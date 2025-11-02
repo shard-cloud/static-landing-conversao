@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0 --port 80",
     "build": "vite build",
-    "preview": "vite preview --port 80"
+    "preview": "vite preview --host 0.0.0.0 --port 80",
+    "start": "serve dist -l 80 -n"
   },
   "keywords": [
     "landing-page",
@@ -17,6 +18,9 @@
   ],
   "author": "ShardCloud",
   "license": "MIT",
+  "dependencies": {
+    "serve": "^14.2.1"
+  },
   "devDependencies": {
     "terser": "^5.44.0",
     "vite": "^5.0.0"

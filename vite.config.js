@@ -1,16 +1,11 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from "vite";
 
 export default defineConfig({
-  root: 'src',
+  root: "src",
   build: {
-    outDir: '../dist',
+    outDir: "../dist",
     emptyOutDir: true,
-    rollupOptions: {
-      input: {
-        main: 'src/index.html',
-      },
-    },
-    minify: 'terser',
+    minify: "terser",
     terserOptions: {
       compress: {
         drop_console: true,
@@ -18,13 +13,11 @@ export default defineConfig({
     },
   },
   server: {
-    host: '0.0.0.0',
+    host: "0.0.0.0",
     port: 80,
-    open: true,
   },
   preview: {
     port: 80,
-    host: '0.0.0.0',
+    host: "0.0.0.0",
   },
 });
-

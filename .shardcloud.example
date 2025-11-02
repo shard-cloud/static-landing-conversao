@@ -3,5 +3,5 @@ MAIN=index.html
 MEMORY=512
 VERSION=recommended
 SUBDOMAIN=sua-landing
-CUSTOM_COMMAND=npm run build && npm run preview
+CUSTOM_COMMAND=npm run build && npm start
 DESCRIPTION=Landing page moderna e otimizada para conversão com i18n
